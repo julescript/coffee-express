@@ -31,6 +31,7 @@ const userSlice = createSlice({
     },
     updateUserProfile(state, action){
         state.userProfile = action.payload.userProfile
+        // NEVER CALL APIS here
         // asyncStorageManager.setItem("userProfile", action.payload.userProfile)
     },
   },
