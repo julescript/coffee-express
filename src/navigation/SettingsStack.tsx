@@ -11,7 +11,11 @@ export function SettingsStack() {
   const navigationRef = useRef(null);
 
   return (
-      <RootStackNav.Navigator >
+      <RootStackNav.Navigator 
+        screenOptions={{
+          headerShown: true
+        }}
+      >
 
         <RootStackNav.Screen
           name="LoginScreen"
